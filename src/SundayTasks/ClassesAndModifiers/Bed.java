@@ -15,7 +15,7 @@ public class Bed {
 
     public Bed(double hight, String sheetColor, double price) {
         this.height = height;
-        this.pillows = 1;
+        this.pillows = GeneralConstants.defaltPillowsCount;
         this.sheetColor = sheetColor;
         this.price = price;
     }
