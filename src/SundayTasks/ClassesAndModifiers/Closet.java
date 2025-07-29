@@ -26,4 +26,7 @@ public class Closet {
         }
         return finalShirtList;
     }
+    public void addShirtToCloset(Shirt shirt){
+        ShirtListMerger.addShirtToList(shirts, shirt);
+    }
 }
