@@ -8,4 +8,9 @@ public class Room {
         this.bed = bed;
         this.closet = closet;
     }
+
+    public Room(Bed bed, Shirt[] shirts) {
+        this.bed = bed;
+        this.closet = new Closet(shirts);
+    }
 }
