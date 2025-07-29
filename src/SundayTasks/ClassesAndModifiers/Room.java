@@ -13,4 +13,10 @@ public class Room {
         this.bed = bed;
         this.closet = new Closet(shirts);
     }
+    public Bed getBed() {
+        return bed;
+    }
+    public Closet getCloset() {
+        return closet;
+    }
 }

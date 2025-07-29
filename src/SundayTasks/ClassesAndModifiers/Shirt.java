@@ -8,5 +8,11 @@ public class Shirt {
         this.color = color;
         this.size = size;
     }
+    public String getColor() {
+        return color;
+    }
+    public int getSize() {
+        return size;
+    }
 
 }
