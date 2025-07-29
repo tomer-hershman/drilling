@@ -10,4 +10,13 @@ public class Bed {
         this.pillows = pillows;
         this.sheetColor = sheetColor;
     }
+    public double getHeight(){
+        return height;
+    }
+    public int getPillows() {
+        return pillows;
+    }
+    public String getSheetColor() {
+        return sheetColor;
+    }
 }
