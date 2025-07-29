@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
          Bed bed = new Bed(GeneralConstants.myBedHeight,
                           GeneralConstants.myPillowsCount,
-                          GeneralConstants.mySheetColor,
+                          TomerConstants.favoriteColor,
                           GeneralConstants.myBedPrice);
         Closet closet = new Closet(new Shirt[]{
                 new Shirt("red", 42),
