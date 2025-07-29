@@ -10,6 +10,11 @@ public class Bed {
         this.pillows = pillows;
         this.sheetColor = sheetColor;
     }
+    public Bed (double hight, String sheetColor) {
+        this.height = height;
+        this.pillows = 1;
+        this.sheetColor = sheetColor;
+    }
     public double getHeight(){
         return height;
     }
