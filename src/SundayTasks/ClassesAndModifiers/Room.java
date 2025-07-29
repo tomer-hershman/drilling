@@ -1,0 +1,11 @@
+package SundayTasks.ClassesAndModifiers;
+
+public class Room {
+    private Bed bed;
+    private Closet closet;
+
+    public Room(Bed bed, Closet closet) {
+        this.bed = bed;
+        this.closet = closet;
+    }
+}
