@@ -22,6 +22,7 @@ public abstract class Fish {
     void walkByFoot() {
         System.out.println("Fish walks by foot");
     }
+    abstract void goToWork();
 
     int getAge() {
         return age;
