@@ -13,7 +13,7 @@ public class Bed {
         this.price = price;
     }
 
-    public Bed(double hight, String sheetColor, double price) {
+    public Bed(double height, String sheetColor, double price) {
         this.height = height;
         this.pillows = GeneralConstants.defaltPillowsCount;
         this.sheetColor = sheetColor;
