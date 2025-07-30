@@ -18,4 +18,8 @@ public enum month {
     month(int days) {
         this.days = days;
     }
+    public int getSpot(month m){
+        return m.ordinal();
+    }
+
 }
