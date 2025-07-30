@@ -1,11 +1,14 @@
+import SandayTasks.Records.RecordConstants;
+import SandayTasks.Records.RecordsHelperClass;
+import SandayTasks.Records.Student;
 import SundayTasks.ClassesAndModifiers.*;
 
 public class Main {
     public static void main(String[] args) {
-         Bed bed = new Bed(ClassesAndModifiersConstants.myBedHeight,
-                          ClassesAndModifiersConstants.myPillowsCount,
-                          TomerConstants.favoriteColor,
-                          ClassesAndModifiersConstants.myBedPrice);
+        Bed bed = new Bed(ClassesAndModifiersConstants.myBedHeight,
+                ClassesAndModifiersConstants.myPillowsCount,
+                TomerConstants.favoriteColor,
+                ClassesAndModifiersConstants.myBedPrice);
         Closet closet = new Closet(new Shirt[]{
                 new Shirt("red", 18),
                 new Shirt("blue", 16),
@@ -18,11 +21,14 @@ public class Main {
             System.out.println(shirt.getColor() + " shirt of size " + shirt.getSize());
         }
 
-        if(HelperClass.isInTolerance(bed.getPrice(),TomerConstants.befPriceTolerance,TomerConstants.maxBedPrice)){
+        if (HelperClass.isInTolerance(bed.getPrice(), TomerConstants.befPriceTolerance, TomerConstants.maxBedPrice)) {
             System.out.println("The bed price is within the acceptable range.");
         } else {
             System.out.println("The bed price is outside the acceptable range.");
         }
+
+        Student tomer = new Student(RecordConstants.MY_NAME, RecordConstants.MY_GRADE, RecordConstants.MY_CLASS);
+        RecordsHelperClass.printStudentInfo(tomer);
 
     }
 }
