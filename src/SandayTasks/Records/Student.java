@@ -1,6 +1,9 @@
 package SandayTasks.Records;
 
 public record Student(String name, int grade, char clas) {
+    public Student(String name, char clas){
+       this(name, 9, clas);
+    }
     public void printStudentInfo() {
         System.out.print(name);
         System.out.print(" is in grade " + grade);
