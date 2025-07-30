@@ -7,4 +7,8 @@ public record Student(String name, int grade, char clas) {
         System.out.println(", in class " + clas);
     }
 
+    public boolean isInHighSchool() {
+        return grade > 9 && grade <= 12;
+    }
+
 }
