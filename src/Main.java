@@ -18,5 +18,11 @@ public class Main {
             System.out.println(shirt.getColor() + " shirt of size " + shirt.getSize());
         }
 
+        if(HelperClass.isInTolerance(bed.getPrice(),TomerConstants.befPriceTolerance,TomerConstants.maxBedPrice)){
+            System.out.println("The bed price is within the acceptable range.");
+        } else {
+            System.out.println("The bed price is outside the acceptable range.");
+        }
+
     }
 }
