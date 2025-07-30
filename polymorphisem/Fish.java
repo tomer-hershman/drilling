@@ -12,15 +12,15 @@ public abstract class Fish {
     }
 
     void takeTheCar() {
-        System.out.println("Fish takes the car");
+        System.out.println("takes the car");
     }
 
     void takeTheTrain() {
-        System.out.println("Fish takes the train");
+        System.out.println("takes the train");
     }
 
     void walkByFoot() {
-        System.out.println("Fish walks by foot");
+        System.out.println("walks by foot");
     }
     abstract void goToWork();
 
