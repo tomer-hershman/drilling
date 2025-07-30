@@ -1,4 +1,4 @@
-public enum month {
+public enum Month {
     JANUARY(30),
     FEBRUARY(28),
     MARCH(31),
@@ -15,11 +15,16 @@ public enum month {
 
     private final int days;
 
-    month(int days) {
+    Month(int days) {
         this.days = days;
     }
-    public int getSpot(month m){
+
+    public int getSpot(Month m) {
         return m.ordinal();
+    }
+
+    public int getDays() {
+        return days;
     }
 
 }
