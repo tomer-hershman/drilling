@@ -1,6 +1,6 @@
 package SundayTasks.ClassesAndModifiers;
 
-public class GeneralConstants {
+public class ClassesAndModifiersConstants {
     public static final String mySheetColor = "red and white";
     public static final int myPillowsCount = 3;
     public static final double myBedHeight = 1.5;

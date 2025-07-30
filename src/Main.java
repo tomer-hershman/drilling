@@ -2,10 +2,10 @@ import SundayTasks.ClassesAndModifiers.*;
 
 public class Main {
     public static void main(String[] args) {
-         Bed bed = new Bed(GeneralConstants.myBedHeight,
-                          GeneralConstants.myPillowsCount,
+         Bed bed = new Bed(ClassesAndModifiersConstants.myBedHeight,
+                          ClassesAndModifiersConstants.myPillowsCount,
                           TomerConstants.favoriteColor,
-                          GeneralConstants.myBedPrice);
+                          ClassesAndModifiersConstants.myBedPrice);
         Closet closet = new Closet(new Shirt[]{
                 new Shirt("red", 18),
                 new Shirt("blue", 16),
