@@ -1,8 +1,7 @@
-package src;
 import java.util.Scanner;
 
-
 public enum GroceryStore {
+
     APPLE(1, "Apple"),
     CHEESE(5, "Cheese"),
     WATER_BOTTLE(3, "Water Bottle"),
@@ -11,10 +10,12 @@ public enum GroceryStore {
 
     private final int price;
     private final String name;
+
     GroceryStore(int price, String name) {
         this.price = price;
         this.name = name;
     }
+
     public int getPrice() {
         return price;
     }

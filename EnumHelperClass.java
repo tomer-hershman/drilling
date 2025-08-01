@@ -1,5 +1,3 @@
-import src.GroceryStore;
-
 public class EnumHelperClass {
     public static int daysPassedInYearByDayInMonth(Month month, int day) {
         Month[] values = month.values();
