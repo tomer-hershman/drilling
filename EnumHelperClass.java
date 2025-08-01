@@ -1,5 +1,5 @@
 public class EnumHelperClass {
-    public int daysPassedInYear(Month month, int day){
+    public static int daysPassedInYearByDayInMonth(Month month, int day) {
         Month[] values = month.values();
         int passedThisMonth = (month.getDays() - day + 1);
         int total = passedThisMonth;
@@ -9,4 +9,15 @@ public class EnumHelperClass {
         return total;
     }
 
+    public static Month whatMonthIsIt(int dayInYear) {
+        Month[] values = Month.values();
+        int totalDays = 0;
+        for (Month month : values) {
+            totalDays += month.getDays();
+            if (dayInYear <= totalDays) {
+                return month;
+            }
+        }
+        return null;
+    }
 }
