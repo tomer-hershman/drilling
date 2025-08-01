@@ -13,4 +13,5 @@ public class RecordsHelperClass {
         Student tomer = new Student(RecordConstants.MY_NAME, RecordConstants.MY_GRADE, RecordConstants.MY_CLASS);
         RecordsHelperClass.printStudentInfo(tomer);
     }
+
 }
