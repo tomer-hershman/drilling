@@ -9,4 +9,8 @@ public class RecordsHelperClass {
             System.out.println(student.name() + " is not in high school.");
         }
     }
+    public static void printMe(){
+        Student tomer = new Student(RecordConstants.MY_NAME, RecordConstants.MY_GRADE, RecordConstants.MY_CLASS);
+        RecordsHelperClass.printStudentInfo(tomer);
+    }
 }

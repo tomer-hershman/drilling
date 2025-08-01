@@ -27,8 +27,5 @@ public class Main {
             System.out.println("The bed price is outside the acceptable range.");
         }
 
-        Student tomer = new Student(RecordConstants.MY_NAME, RecordConstants.MY_GRADE, RecordConstants.MY_CLASS);
-        RecordsHelperClass.printStudentInfo(tomer);
-
     }
 }
