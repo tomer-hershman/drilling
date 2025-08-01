@@ -26,6 +26,11 @@ public class Main {
         } else {
             System.out.println("The bed price is outside the acceptable range.");
         }
+        // create 60 sample students records in an array
+        Student[] students = new Student[60];
+        for (int i = 0; i < students.length; i++) {
+            students[i] = new Student("Student " + (i + 1), (i % 4) + 9, (i % 3) + 1);
+        }
 
     }
 }

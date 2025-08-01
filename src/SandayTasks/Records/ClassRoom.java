@@ -1,6 +1,6 @@
 package SandayTasks.Records;
 
-public record ClassRoom(int classNum, Student[] students) {
+public record ClassRoom(int grade, int classNum, Student[] students) {
 
 
 }

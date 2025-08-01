@@ -1,7 +1,7 @@
 package SandayTasks.Records;
 
-public record Student(String name, int grade, char clas) {
-    public Student(String name, char clas){
+public record Student(String name, int grade, int clas) {
+    public Student(String name, int clas){
        this(name, 9, clas);
     }
     public void printStudentInfo() {
