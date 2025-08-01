@@ -1,3 +1,5 @@
+import src.GroceryStore;
+
 public class EnumHelperClass {
     public static int daysPassedInYearByDayInMonth(Month month, int day) {
         Month[] values = month.values();
@@ -19,5 +21,14 @@ public class EnumHelperClass {
             }
         }
         return null;
+    }
+
+    public static int groceryBill(int[] amounts, GroceryStore[] items) {
+        int total = 0;
+        for (int i = 0; i < amounts.length; i++) {
+            total += amounts[i] * items[i].getPrice();
+        }
+        return total;
+
     }
 }
