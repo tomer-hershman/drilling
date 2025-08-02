@@ -15,7 +15,7 @@ public class Main {
         bed.changeSheetColor(TomerConstants.MY_SHEET_COLOR);
         Room room = new Room(bed, closet);
         System.out.println("shirts that fit me: ");
-        Shirt[] shirts = room.getCloset().getShirtBySize(TomerConstants.SHIRT_SIZE);
+        Shirt[] shirts = room.getCloset().getShirtsBySize(TomerConstants.SHIRT_SIZE);
         for (Shirt shirt : shirts) {
             System.out.println(shirt.getColor() + " shirt of size " + shirt.getSize());
         }

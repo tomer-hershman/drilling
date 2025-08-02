@@ -10,7 +10,7 @@ public class Room {
     }
 
     public Room(Bed bed, Shirt[] shirts) {
-        new Room(bed, new Closet(shirts));
+        this(bed, new Closet(shirts));
     }
     public Bed getBed() {
         return bed;

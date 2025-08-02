@@ -14,7 +14,7 @@ public class Bed {
     }
 
     public Bed(double height, String sheetColor) {
-        new Bed(height, ClassesAndModifiersConstants.DEFAULT_PILLOW_COUNT,
+        this(height, ClassesAndModifiersConstants.DEFAULT_PILLOW_COUNT,
                 sheetColor, ClassesAndModifiersConstants.DEFAULT_BED_PRICE);
     }
 
