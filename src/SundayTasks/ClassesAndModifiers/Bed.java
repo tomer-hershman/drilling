@@ -13,11 +13,11 @@ public class Bed {
         this.price = price;
     }
 
-    public Bed(double height, String sheetColor, double price) {
+    public Bed(double height, String sheetColor) {
         this.height = height;
         this.pillows = ClassesAndModifiersConstants.DEFAULT_PILLOW_COUNT;
         this.sheetColor = sheetColor;
-        this.price = price;
+        this.price = ClassesAndModifiersConstants.DEFAULT_BED_PRICE;
     }
 
     public double getHeight() {
@@ -34,5 +34,9 @@ public class Bed {
 
     public double getPrice() {
         return price;
+    }
+
+    public void changeSheetColor(String newColor) {
+        this.sheetColor = newColor;
     }
 }
