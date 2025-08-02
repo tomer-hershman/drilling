@@ -1,8 +1,8 @@
 package SandayTasks.Records;
 
 public record Student(String name, int grade, int classNumber) {
-    public Student(String name, int clas){
-       this(name, RecordConstants.MY_GRADE, clas);
+    public Student(String name, int classNumber){
+       this(name, RecordConstants.DEFAULT_GRADE, classNumber);
     }
 
     public String studentInfo() {

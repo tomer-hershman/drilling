@@ -50,6 +50,7 @@ public class RecordsHelperClass {
                     indexClasses = 0;
                     for (Student student : students) {
                         if (student.classNumber() == j && student.grade() == i) {
+                            classrooms[indexClassesArray] = new Classroom(i, j, new Student[numberOfStudentsInClass]);
                             classrooms[indexClassesArray].students()[indexClasses] = student;
                             indexClasses++;
                         }
