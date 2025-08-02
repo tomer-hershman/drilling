@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public enum GroceryStore {
 
     APPLE(1, "Apple"),
