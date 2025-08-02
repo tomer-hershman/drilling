@@ -14,10 +14,8 @@ public class Bed {
     }
 
     public Bed(double height, String sheetColor) {
-        this.height = height;
-        this.pillows = ClassesAndModifiersConstants.DEFAULT_PILLOW_COUNT;
-        this.sheetColor = sheetColor;
-        this.price = ClassesAndModifiersConstants.DEFAULT_BED_PRICE;
+        new Bed(height, ClassesAndModifiersConstants.DEFAULT_PILLOW_COUNT,
+                sheetColor, ClassesAndModifiersConstants.DEFAULT_BED_PRICE);
     }
 
     public double getHeight() {
