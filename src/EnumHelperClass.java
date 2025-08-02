@@ -5,7 +5,7 @@ public class EnumHelperClass {
 
     public static int daysPassedInYearByDayInMonth(Month month, int day) {
         Month[] values = month.values();
-        int passedThisMonth = (month.getDays() - day + 1);
+        int passedThisMonth = (day);
         int total = passedThisMonth;
         for (int i = 0; i < month.getSpot(month); i++) {
             total += values[i].getDays();
@@ -32,7 +32,9 @@ public class EnumHelperClass {
                 System.out.println("enter apple weight in kg");
                 total += scanner.nextDouble() * items[i].getPrice();
             }
-            total += amounts[i] * items[i].getPrice();
+            else{
+                total += amounts[i] * items[i].getPrice();
+            }
         }
         return total;
 

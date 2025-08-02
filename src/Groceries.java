@@ -1,4 +1,4 @@
-public enum GroceryStore {
+public enum Groceries {
 
     APPLE(3.5, "Apple"),
     CHEESE(5, "Cheese"),
