@@ -1,13 +1,12 @@
 package SandayTasks.Records;
 
-public record Student(String name, int grade, int clas) {
+public record Student(String name, int grade, int classNumber) {
     public Student(String name, int clas){
        this(name, 9, clas);
     }
-    public void printStudentInfo() {
-        System.out.print(name);
-        System.out.print(" is in grade " + grade);
-        System.out.println(", in class " + clas);
+
+    public String studentInfo() {
+        return "Student Name: " + name + ", Grade: " + grade + ", Class Number: " + classNumber;
     }
 
     public boolean isInHighSchool() {

@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class RecordsHelperClass {
     public static void printStudentInfo(Student student) {
-        student.printStudentInfo();
+        System.out.println(student.studentInfo());
         if (student.isInHighSchool()) {
             System.out.println(student.name() + " is in high school.");
         } else {
@@ -14,13 +14,13 @@ public class RecordsHelperClass {
 
     public static void printMe() {
         Student tomer = new Student(RecordConstants.MY_NAME, RecordConstants.MY_GRADE, RecordConstants.MY_CLASS);
-        RecordsHelperClass.printStudentInfo(tomer);
+        printStudentInfo(tomer);
     }
 
-    public static ClassRoom[] sortToClassRooms(Student[] students) {
+    public static Classroom[] sortToClassRooms(Student[] students) {
         Stack<Student>[][] schoolClasses = new Stack[12][students.length];
-        Stack<ClassRoom> classRooms = new Stack<ClassRoom>();
-        ClassRoom classRoom = null;
+        Stack<Classroom> classRooms = new Stack<Classroom>();
+        Classroom classRoom = null;
         Student[] classRoomStudents = null;
 
         for (int i = 0; i < 12; i++) {
@@ -31,7 +31,7 @@ public class RecordsHelperClass {
 
         for (int i = 0; i < students.length; i++) {
 
-            schoolClasses[students[i].grade() - 1][students[i].clas() - 1].push(students[i]);
+            schoolClasses[students[i].grade() - 1][students[i].classNumber() - 1].push(students[i]);
         }
 
         for (int i = 0; i < 12; i++) {
@@ -41,14 +41,14 @@ public class RecordsHelperClass {
                     for (int k = 0; k < schoolClasses[i][j].size(); k++) {
                         classRoomStudents[k] = schoolClasses[i][j].pop();
                     }
-                    classRoom = new ClassRoom(i, j, classRoomStudents);
+                    classRoom = new Classroom(i, j, classRoomStudents);
                     classRooms.push(classRoom);
                 }
 
             }
 
         }
-        ClassRoom[] classRoomsArray = new ClassRoom[classRooms.size()];
+        Classroom[] classRoomsArray = new Classroom[classRooms.size()];
         for (int i = 0; i < classRoomsArray.length; i++) {
             classRoomsArray[i] = classRooms.pop();
         }
