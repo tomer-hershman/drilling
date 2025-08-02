@@ -1,14 +1,12 @@
-import SandayTasks.Records.RecordConstants;
-import SandayTasks.Records.RecordsHelperClass;
 import SandayTasks.Records.Student;
 import SundayTasks.ClassesAndModifiers.*;
 
 public class Main {
     public static void main(String[] args) {
-        Bed bed = new Bed(ClassesAndModifiersConstants.myBedHeight,
-                ClassesAndModifiersConstants.myPillowsCount,
+        Bed bed = new Bed(ClassesAndModifiersConstants.MY_BED_HEIGHT,
+                ClassesAndModifiersConstants.MY_PILLOW_COUNT,
                 TomerConstants.favoriteColor,
-                ClassesAndModifiersConstants.myBedPrice);
+                ClassesAndModifiersConstants.MY_BED_PRICE);
         Closet closet = new Closet(new Shirt[]{
                 new Shirt("red", 18),
                 new Shirt("blue", 16),
