@@ -1,4 +1,4 @@
-package polymorphisem;
+package poly.polymorphisem;
 
 public abstract class Fish {
     int age;

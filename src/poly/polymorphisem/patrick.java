@@ -1,4 +1,4 @@
-package polymorphisem;
+package poly.polymorphisem;
 
 public class patrick extends Fish implements BasketballPlayer {
 
