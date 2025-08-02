@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class PolyHelperClass {
     public static void basketballPlayerAgenda(BasketballPlayer[] players) {
         for (BasketballPlayer player : players) {
-            if (player instanceof Fish) {
-                ((Fish) player).goToWork();
+            if (player instanceof Fish fishPlayer) {
+                fishPlayer.goToWork();
 
             }
             player.playBasketball();
@@ -22,8 +22,8 @@ public class PolyHelperClass {
         }
         BasketballPlayer[] basketballPlayers = new BasketballPlayer[BasketBallFishCount];
         for (int i = 0, j = 0; i < fish.length; i++) {
-            if (fish[i] instanceof BasketballPlayer) {
-                basketballPlayers[j++] = (BasketballPlayer) fish[i];
+            if (BasketballPlayer fish[i] instanceof BasketballPlayer) {
+                basketballPlayers[j++] = fish[i];
             }
 
         }

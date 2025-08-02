@@ -1,5 +1,5 @@
 package poly.polymorphisem;
 
 public interface BasketballPlayer {
-    void playBasketball();
+    public void playBasketball();
 }
