@@ -5,13 +5,14 @@ public class Main {
     public static void main(String[] args) {
         Bed bed = new Bed(TomerConstants.MY_BED_HEIGHT,
                 TomerConstants.MY_PILLOW_COUNT,
-                TomerConstants.FAVORITE_COLOR,
+                "red",
                 TomerConstants.MY_BED_PRICE);
         Closet closet = new Closet(new Shirt[]{
                 new Shirt("red", 18),
                 new Shirt("blue", 16),
                 new Shirt("green", 12)
         });
+        bed.changeSheetColor(TomerConstants.MY_SHEET_COLOR);
         Room room = new Room(bed, closet);
         System.out.println("shirts that fit me: ");
         Shirt[] shirts = room.getCloset().getShirtBySize(TomerConstants.SHIRT_SIZE);
