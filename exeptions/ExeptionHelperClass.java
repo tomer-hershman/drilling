@@ -5,8 +5,7 @@ public class ExeptionHelperClass {
         throw new RuntimeException("A RunTimeException occurred");
 
     }
-    static void error()throws IndexOutOfBoundsException, RuntimeException {
-        throw new RuntimeException("A RunTimeException occurred");
+    static void error()throws IndexOutOfBoundsException{
         throw new IndexOutOfBoundsException("An IndexOutOfBoundsException occurred");
     }
 }
