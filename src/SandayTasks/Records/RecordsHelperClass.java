@@ -18,40 +18,14 @@ public class RecordsHelperClass {
     }
 
     public static Classroom[] sortToClassRooms(Student[] students) {
-        Stack<Student>[][] schoolClasses = new Stack[12][students.length];
-        Stack<Classroom> classRooms = new Stack<Classroom>();
-        Classroom classRoom = null;
-        Student[] classRoomStudents = null;
-
-        for (int i = 0; i < 12; i++) {
-            for (int j = 0; j < students.length; j++) {
-                schoolClasses[i][j] = new Stack<Student>();
-            }
-        }
-
-        for (int i = 0; i < students.length; i++) {
-
-            schoolClasses[students[i].grade() - 1][students[i].classNumber() - 1].push(students[i]);
-        }
-
-        for (int i = 0; i < 12; i++) {
-            for (int j = 0; j < students.length; j++) {
-                if (schoolClasses[i][j].size() > 0) {
-                    classRoomStudents = new Student[schoolClasses[i][j].size()];
-                    for (int k = 0; k < schoolClasses[i][j].size(); k++) {
-                        classRoomStudents[k] = schoolClasses[i][j].pop();
-                    }
-                    classRoom = new Classroom(i, j, classRoomStudents);
-                    classRooms.push(classRoom);
-                }
+        Classroom[] classrooms = new Classroom[students.length];
+        int classListLen = 0;
+        for (Student student : students) {
+            if (student != null)
+            while (){
+                if ( != null)
 
             }
-
         }
-        Classroom[] classRoomsArray = new Classroom[classRooms.size()];
-        for (int i = 0; i < classRoomsArray.length; i++) {
-            classRoomsArray[i] = classRooms.pop();
-        }
-        return classRoomsArray;
     }
 }

@@ -2,7 +2,7 @@ package SandayTasks.Records;
 
 public record Student(String name, int grade, int classNumber) {
     public Student(String name, int clas){
-       this(name, 9, clas);
+       this(name, RecordConstants.MY_GRADE, clas);
     }
 
     public String studentInfo() {
@@ -10,7 +10,7 @@ public record Student(String name, int grade, int classNumber) {
     }
 
     public boolean isInHighSchool() {
-        return grade > 9 && grade <= 12;
+        return grade >= RecordConstants.MIN_HIGH_SCHOOL_GRADE && grade <= RecordConstants.MAX_HIGH_SCHOOL_GRADE;
     }
 
 }
