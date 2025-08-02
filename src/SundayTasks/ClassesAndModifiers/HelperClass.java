@@ -6,11 +6,11 @@ public class HelperClass {
         for (int i = 0; i < shirtList.length; i++) {
             newShirtList[i] = shirtList[i];
         }
-        newShirtList[-1] = shirt;
+        newShirtList[newShirtList.length-1] = shirt;
         return newShirtList;
     }
 
-    public static boolean isInTolerance(double value, double tolerance,double wantedValue) {
+    public static boolean isInTolerance(double value, double tolerance, double wantedValue) {
         return (Math.abs(value - wantedValue) <= Math.abs(tolerance));
     }
 }
