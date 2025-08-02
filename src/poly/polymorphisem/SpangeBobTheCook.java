@@ -4,4 +4,9 @@ public class SpangeBobTheCook extends SpangeBob{
     public SpangeBobTheCook(int age, String name, String favoriteFood) {
         super(age, name, favoriteFood);
     }
+
+    @Override
+    public void playBasketball() {
+        System.out.println("SpangeBob the Cook plays basketball with a spatula!");
+    }
 }
