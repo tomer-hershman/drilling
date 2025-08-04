@@ -22,7 +22,6 @@ public abstract class Fish {
     public void walkByFoot() {
         System.out.println("walks by foot");
     }
-    public abstract void goToWork();
 
     public int getAge() {
         return age;
@@ -47,5 +46,8 @@ public abstract class Fish {
     public void setFavoriteFood(String favoriteFood) {
         this.favoriteFood = favoriteFood;
     }
+
+    public abstract void goToWork();
+
 
 }
