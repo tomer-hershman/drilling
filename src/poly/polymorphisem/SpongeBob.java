@@ -1,13 +1,13 @@
 package poly.polymorphisem;
 
-public class SpangeBob extends Fish implements BasketballPlayer {
+public class SpongeBob extends Fish implements BasketballPlayer {
 
-    public SpangeBob(int age, String name, String favoriteFood) {
+    public SpongeBob(int age, String name, String favoriteFood) {
         super(age, name, favoriteFood);
     }
 
     @Override
-    void goToWork() {
+    public void goToWork() {
         walkByFoot();
     }
     @Override

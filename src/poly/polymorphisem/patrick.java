@@ -7,7 +7,7 @@ public class patrick extends Fish implements BasketballPlayer {
     }
 
     @Override
-    void goToWork() {
+    public void goToWork() {
         takeTheTrain();
     }
     @Override

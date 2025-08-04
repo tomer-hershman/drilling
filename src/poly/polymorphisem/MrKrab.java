@@ -6,7 +6,7 @@ public class MrKrab extends Fish{
     }
 
     @Override
-    void goToWork() {
+    public void goToWork() {
         takeTheCar();
     }
 }

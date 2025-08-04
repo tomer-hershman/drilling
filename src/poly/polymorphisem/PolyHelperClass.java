@@ -23,7 +23,7 @@ public class PolyHelperClass {
         BasketballPlayer[] basketballPlayers = new BasketballPlayer[BasketBallFishCount];
         for (int i = 0, j = 0; i < fish.length; i++) {
             if (fish[i] instanceof BasketballPlayer fishPlayer) {
-                basketballPlayers[j++] = fish[i];
+                basketballPlayers[j++] = (BasketballPlayer) fish[i];
             }
 
         }
