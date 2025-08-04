@@ -1,6 +1,5 @@
 package SandayTasks.Records;
 
-import java.util.Stack;
 
 public class RecordsHelperClass {
     public static void printStudentInfo(Student student) {
