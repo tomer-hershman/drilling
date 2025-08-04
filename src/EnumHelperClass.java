@@ -25,7 +25,7 @@ public class EnumHelperClass {
         return null;
     }
 
-    public static int groceryBill(int[] amounts, GroceryStore[] items) {
+    public static int groceryBill(int[] amounts, Groceries[] items) {
         int total = 0;
         for (int i = 0; i < amounts.length; i++) {
             if (items[i].getName() == "apple") {
