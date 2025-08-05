@@ -1,13 +1,13 @@
-package polymorphisem;
+package poly.polymorphisem;
 
-public class patrick extends Fish implements BasketballPlayer {
+public class Patrick extends Fish implements BasketballPlayer {
 
-    public patrick(int age, String name, String favoriteFood) {
+    public Patrick(int age, String name, String favoriteFood) {
         super(age, name, favoriteFood);
     }
 
     @Override
-    void goToWork() {
+    public void goToWork() {
         takeTheTrain();
     }
     @Override

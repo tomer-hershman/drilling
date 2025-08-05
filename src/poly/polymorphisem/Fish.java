@@ -1,4 +1,4 @@
-package polymorphisem;
+package poly.polymorphisem;
 
 public abstract class Fish {
     int age;
@@ -11,41 +11,43 @@ public abstract class Fish {
         this.favoriteFood = favoriteFood;
     }
 
-    void takeTheCar() {
+    public void takeTheCar() {
         System.out.println("takes the car");
     }
 
-    void takeTheTrain() {
+    public void takeTheTrain() {
         System.out.println("takes the train");
     }
 
-    void walkByFoot() {
+    public void walkByFoot() {
         System.out.println("walks by foot");
     }
-    abstract void goToWork();
 
-    int getAge() {
+    public int getAge() {
         return age;
     }
 
-    String getName() {
+    public String getName() {
         return name;
     }
 
-    String getFavoriteFood() {
+    public String getFavoriteFood() {
         return favoriteFood;
     }
 
-    void setAge(int age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
-    void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    void setFavoriteFood(String favoriteFood) {
+    public void setFavoriteFood(String favoriteFood) {
         this.favoriteFood = favoriteFood;
     }
+
+    public abstract void goToWork();
+
 
 }

@@ -1,4 +1,4 @@
-package polymorphisem;
+package poly.polymorphisem;
 
 public class MrKrab extends Fish{
     public MrKrab(int age, String name, String favoriteFood) {
@@ -6,7 +6,7 @@ public class MrKrab extends Fish{
     }
 
     @Override
-    void goToWork() {
+    public void goToWork() {
         takeTheCar();
     }
 }
