@@ -5,9 +5,9 @@ public class EnumHelperClass {
 
     public static int daysPassedInYearByDayInMonth(Month month, int day) {
         Month[] values = month.values();
-        int passedThisMonth = (day);
+        int passedThisMonth = day;
         int total = passedThisMonth;
-        for (int i = 0; i < month.getSpot(month); i++) {
+        for (int i = 0; i < month.getSpot(); i++) {
             total += values[i].getDays();
         }
         return total;
