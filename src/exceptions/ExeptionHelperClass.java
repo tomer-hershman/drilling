@@ -6,18 +6,14 @@ import java.net.BindException;
 
 public class ExeptionHelperClass {
 
-    static public void testExceptions()throws RuntimeException{
-        try {
-            // This will throw an IndexOutOfBoundsException
-            outOfBoundsError();
-        } catch (IndexOutOfBoundsException e) {
-            //print stacktrace
-            e.printStackTrace();
-            runtimeError();
-        }
-
+    public static void testExceptions() throws RuntimeException {
+        RuntimeException runtimeException = new RuntimeException("A RuntimeException occurred");
+        IndexOutOfBoundsException indexOutOfBoundsException = new IndexOutOfBoundsException("An IndexOutOfBoundsException occurred");
+        printstackTrace(indexOutOfBoundsException);
+        throw runtimeException;
     }
-    public static void ExeptionByNum(int num)throws FileNotFoundException, BindException, AuthenticationException{
+
+    public static void ExeptionByNum(int num) throws FileNotFoundException, BindException, AuthenticationException {
         switch (num) {
             case 1:
                 throw new FileNotFoundException("File not found exception occurred");
@@ -28,6 +24,7 @@ public class ExeptionHelperClass {
             default:
         }
     }
+
     public static void ExeptionByNumCatcher(int num) {
         try {
             ExeptionByNum(num);
@@ -45,11 +42,31 @@ public class ExeptionHelperClass {
         }
     }
 
-    static public void runtimeError() throws RuntimeException{
+    static public void runtimeError() throws RuntimeException {
         throw new RuntimeException("A RunTimeException occurred");
 
     }
-    static public void outOfBoundsError() throws IndexOutOfBoundsException{
+
+    static public void outOfBoundsError() throws IndexOutOfBoundsException {
         throw new IndexOutOfBoundsException("An IndexOutOfBoundsException occurred");
+    }
+
+    public static void printUntil100() {
+        int num;
+        try {
+            while (true) {
+                System.out.println("Enter a number");
+                num = scanner.nextInt();
+                if (num == 45) {
+                    throw new IllegalArgumentException("You entered 45, which is not allowed.");
+                }
+                if (num == 100) {
+                    throw new RuntimeException("Number 100 is not allowed.");
+                }
+
+            }
+        } catch (IllegalArgumentException e) {
+            printUntil100();
+        }
     }
 }

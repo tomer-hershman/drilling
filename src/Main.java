@@ -1,4 +1,5 @@
 import exceptions.ExeptionHelperClass;
+import jdk.internal.org.jline.utils.ExecHelper;
 
 import java.util.Scanner;
 
@@ -17,23 +18,7 @@ public class Main {
             System.out.println("an error occurred: " + e.getMessage());
         }
 
-        int num = 0;
-        try {
-            while (num != 100) {
-                System.out.println("Enter a number");
-                num = scanner.nextInt();
-                if (num == 45){
-                    throw new IllegalArgumentException("You entered 45, which is not allowed.");
-                }
-                if(num == 100){
-                    throw  new RuntimeException("Number 100 is not allowed.");
-                }
-
-            }
-        }
-        catch (IllegalArgumentException e) {
-
-        }
+        ExeptionHelperClass.printUntil100();
 
     }
 
