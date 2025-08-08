@@ -42,12 +42,12 @@ public class ExeptionHelperClass {
         }
     }
 
-    static public void runtimeError() throws RuntimeException {
+    public static void runtimeError() throws RuntimeException {
         throw new RuntimeException("A RunTimeException occurred");
 
     }
 
-    static public void outOfBoundsError() throws IndexOutOfBoundsException {
+    public static void outOfBoundsError() throws IndexOutOfBoundsException {
         throw new IndexOutOfBoundsException("An IndexOutOfBoundsException occurred");
     }
 
